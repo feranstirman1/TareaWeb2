@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 2</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal</legend>
+            <label for="">Nombre:<input type="text" placeholder="Juan Perez" required title="Debe ingresar un nombre"></label>
+            <br>
+            <label for="">Date of Birth: <input type="date" required max="2018-01-01" min="1918-01-01"></label>
+            <br>
+            <label for="">Favorite Animal: <input type="text" required placeholder="ej. Perro"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account</legend>
+            <label for="">Email: <input type="email"></label>
+            <br>
+            <label for="">Password: <input type="password" required pattern=".{6,}" title="Debe contener al menos 6 caracteres"></label>
+            <br>
+            <label for="">Verify Password: <input type="password" required pattern=".{6,}" title="Debe contener al menos 6 caracteres"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <fieldset>
+                <legend>Place of Residence</legend>
+                <label for="">Adress: <input type="text" placeholder="ej. res quintas del bosque"></label>
+                <br>
+                <label for="">City: <input type="text" placeholder="ej. Santa Tecla"></label>
+                <br>
+                <label for="">Country: <input type="text" placeholder="ej. El Salvador"></label>
+            </fieldset>
+            
+            <label for="">Phone Number: <input type="text" required pattern="[0-9]{4}-[0-9]{4}"></label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
